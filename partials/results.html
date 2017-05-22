@@ -1,0 +1,36 @@
+<div infinite-scroll='spotify.nextPage()' infinite-scroll-disabled='spotify.busy' infinite-scroll-distance='1'>
+		<section class="results-view">
+			<div ng-if="!spotify.items.length > 0" class="row-fluid">
+				<div class="empty-results"> <span class="results-container">
+					<img class="search-icon-md" src="../Assets/Images/Magnify@2x.png" alt="" height="" width="15%">
+						<div class="l-text">
+						<span>Your results will appear here</span> 
+						
+					</div>
+					</span>
+				</div>
+			</div>
+			<div class="row-fluid" >
+				<ul class="rel-results">
+					<li ng-repeat="music in spotify.items">
+						<div class="span3">
+							<a href="#" id="{{ $index + 1 }}" ng-click="update(music)">
+							<div class="card">
+								<div class="card-item">
+									<img class="pull-left thumbnail artwork" src="{{music.album.images[0].url}}">
+									<span class="title">
+										{{ music.name }}
+									</span> 
+								</div>
+							</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			 				<div ng-if="spotify.items.length > 0" >
+				    <div ng-show='spotify.busy'>Loading data...</div>
+				</div>
+		</section>
+
+</div>

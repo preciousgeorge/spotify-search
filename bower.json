@@ -1,0 +1,25 @@
+{
+  "name": "recruitment-music-search",
+  "authors": [
+    "precious george <precious.george.o@gmail.com>"
+  ],
+  "description": "Music search with spotify api",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "angular": "^1.6.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

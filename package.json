@@ -1,0 +1,19 @@
+{
+  "name": "recruitment-music-search",
+  "version": "1.0.0",
+  "description": "Search Spotify ",
+  "main": "gulp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/compucorp/recruitment-music-search.git"
+  },
+  "author": "Precious George",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/compucorp/recruitment-music-search#readme",
+  "devDependencies": {
+    "gulp-sass": "^3.1.0"
+  }
+}
